@@ -1,47 +1,59 @@
 # Automora AI
 
-> AI-powered automation solutions for modern businesses.
+> **AI-powered automation solutions for modern businesses.**
 
-Automora AI helps businesses automate repetitive tasks, streamline workflows, and connect the tools they already use through intelligent automation.
+Automora AI helps businesses eliminate repetitive work, streamline operations, and connect the tools they already use through intelligent workflow automation.
 
-This repository contains the official Automora AI business website.
+This repository contains the official website for **Automora AI**, built to present its automation services, solutions, process, use cases, and business information through a modern, responsive interface.
 
 ---
 
 ## 🌐 Website
 
-**Automora AI:** https://automora.ai
+**Live Website:** https://automora.ai
 
-> If the domain is not live yet, replace the URL above with your current deployment URL.
+**GitHub Repository:** https://github.com/ByteWithHassan/automora-ai
 
 ---
 
 ## ✨ Features
 
-- Modern responsive business website
+- Modern, responsive business website
+- Professional dark-themed interface
 - AI automation service showcase
-- Services and workflow explanations
-- Process overview
-- Automation use cases
-- FAQ section
-- Contact section
+- Business automation use cases
+- Services overview
+- Step-by-step automation process
+- About Automora section
+- Why Automora section
+- Work examples and use cases
+- Frequently Asked Questions
+- Client contact section
 - Responsive navigation
-- Reusable UI components
-- Smooth scroll and entrance animations
-- Mobile-friendly design
-- SEO-friendly Next.js structure
+- Reusable React components
+- Smooth UI animations and transitions
+- Mobile-responsive design
+- SEO-ready Next.js structure
+- Web3Forms contact form integration
+- Component-based architecture
+- Production-ready Next.js application
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js**
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **Framer Motion**
-- **Lucide Icons**
-- **Vercel / Netlify** for deployment
+| Technology | Purpose |
+|---|---|
+| **Next.js** | React framework and application architecture |
+| **React** | User interface development |
+| **TypeScript** | Type-safe application development |
+| **Tailwind CSS** | Utility-first styling |
+| **Framer Motion** | Animations and transitions |
+| **Lucide Icons** | Interface icons |
+| **Web3Forms** | Contact form submission |
+| **Git** | Version control |
+| **GitHub** | Source code repository |
+| **Vercel / Netlify** | Deployment |
 
 ---
 
@@ -51,44 +63,47 @@ This repository contains the official Automora AI business website.
 automora-ai/
 │
 ├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── icon.svg
+│   ├── globals.css              # Global styles
+│   ├── icon.svg                 # Website favicon
+│   ├── layout.tsx               # Root layout and metadata
+│   └── page.tsx                 # Main website page
 │
 ├── components/
+│   │
 │   ├── navigation/
-│   │   └── Navbar.tsx
+│   │   └── Navbar.tsx           # Main navigation
 │   │
 │   ├── sections/
-│   │   ├── About.tsx
-│   │   ├── Contact.tsx
-│   │   ├── FAQ.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Process.tsx
-│   │   ├── Services.tsx
-│   │   ├── WhatWeDo.tsx
-│   │   ├── WhyAutomora.tsx
-│   │   └── WorkExamples.tsx
+│   │   ├── About.tsx             # About section
+│   │   ├── Contact.tsx           # Contact section
+│   │   ├── FAQ.tsx               # Frequently asked questions
+│   │   ├── Footer.tsx            # Website footer
+│   │   ├── Hero.tsx              # Hero section
+│   │   ├── Process.tsx            # Automation process
+│   │   ├── Services.tsx           # Services showcase
+│   │   ├── WhatWeDo.tsx           # What Automora does
+│   │   ├── WhyAutomora.tsx        # Why choose Automora
+│   │   └── WorkExamples.tsx       # Automation examples
 │   │
 │   └── ui/
-│       ├── Button.tsx
-│       ├── Container.tsx
-│       ├── FadeIn.tsx
-│       ├── HeroVisual.tsx
-│       └── SkipToContent.tsx
+│       ├── Button.tsx             # Reusable button
+│       ├── Container.tsx          # Layout container
+│       ├── FadeIn.tsx             # Animation wrapper
+│       ├── HeroVisual.tsx         # Hero visual component
+│       └── SkipToContent.tsx      # Accessibility component
 │
 ├── config/
-│   └── site.ts
+│   └── site.ts                    # Website configuration
 │
 ├── lib/
-│   └── utils.ts
+│   └── utils.ts                   # Shared utility functions
 │
-├── public/
+├── public/                        # Static assets
 │
-├── .gitignore
-├── next.config.mjs
-├── package.json
-├── package-lock.json
-└── tsconfig.json
+├── .gitignore                     # Git ignored files
+├── next.config.mjs                # Next.js configuration
+├── next-env.d.ts                  # Next.js TypeScript definitions
+├── package.json                   # Project dependencies and scripts
+├── package-lock.json              # Locked dependency versions
+├── README.md                      # Project documentation
+└── tsconfig.json                  # TypeScript configuration
