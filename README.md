@@ -1,241 +1,244 @@
-# Automora AI
+Here is the updated **`README.md`** featuring GitHub Workflow action badges and a dedicated **Product Preview & Interface** section.
 
-> **AI-powered automation solutions for modern businesses.**
+```markdown
+# ⚡ Automora AI — Official Website
 
-Automora AI helps businesses eliminate repetitive work, streamline operations, and connect the tools they already use through intelligent workflow automation.
+> **Intelligent workflow automation for modern businesses.**  
+Automora AI helps companies eliminate repetitive work, optimize operations, and seamlessly bridge their software stack using tailored AI solutions.
 
-This repository contains the official website for **Automora AI**, built to present its automation services, solutions, process, use cases, and business information through a modern, responsive interface.
+<!-- GitHub Workflow Status Badges -->
+[![Production Deployment](https://github.com/ByteWithHassan/automora-ai/actions/workflows/deploy.yml/badge.svg)](https://github.com/ByteWithHassan/automora-ai/actions/workflows/deploy.yml)
+[![Code Quality & Lint](https://github.com/ByteWithHassan/automora-ai/actions/workflows/lint.yml/badge.svg)](https://github.com/ByteWithHassan/automora-ai/actions/workflows/lint.yml)
+[![Security Scan](https://github.com/ByteWithHassan/automora-ai/actions/workflows/security.yml/badge.svg)](https://github.com/ByteWithHassan/automora-ai/actions/workflows/security.yml)
 
----
+<!-- Stack Badges -->
+[![Next.js](https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](#-license)
 
-## 🌐 Website
-
-**Live Website:** https://automora.ai
-
-**GitHub Repository:** https://github.com/ByteWithHassan/automora-ai
-
----
-
-## ✨ Features
-
-- Modern, responsive business website
-- Professional dark-themed interface
-- AI automation service showcase
-- Business automation use cases
-- Services overview
-- Step-by-step automation process
-- About Automora section
-- Why Automora section
-- Work examples and use cases
-- Frequently Asked Questions
-- Client contact section
-- Responsive navigation
-- Reusable React components
-- Smooth UI animations and transitions
-- Mobile-responsive design
-- SEO-ready Next.js structure
-- Web3Forms contact form integration
-- Component-based architecture
-- Production-ready Next.js application
+[🌐 Live Website](https://automora.ai) • [📁 Repository](https://github.com/ByteWithHassan/automora-ai) • [📩 Contact Support](https://automora.ai#contact)
 
 ---
 
-## 🛠️ Tech Stack
+## 🖼️ Product Preview & Interface
+
+Explore the interface structure and visual flow of the Automora AI platform:
+
+<div align="center">
+
+
+```
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  ⚡ AUTOMORA AI                    [ Services ]  [ Process ]  [ Contact ] │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│               Automate Repetitive Work with AI Workflows                    │
+│      Streamline operations, save time, and bridge your business tools.      │
+│                                                                             │
+│                  [ Explore Services ]    [ Schedule Demo ]                  │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  [⚙️ Workflow Automation]   [🤖 Custom AI Agents]   [🔗 System Integration]│
+└─────────────────────────────────────────────────────────────────────────────┘
+
+```
+
+</div>
+
+<details>
+<summary><b>🔍 View Interface Layout & Highlights</b></summary>
+
+<br />
+
+| Interface Module | Features & Visual Components |
+| :--- | :--- |
+| **Hero Section** | Dynamic tagline, CTA routing, interactive gradient hero graphic (`HeroVisual.tsx`). |
+| **Services Showcase** | Interactive card grids detailing AI integration, CRM automation, & document parsing. |
+| **Automation Process** | Timeline flow visualizing Discovery ➔ Architecture ➔ Integration ➔ Hand-off. |
+| **Case Studies** | Quantifiable results cards highlighting saved hours & operational ROI. |
+| **Contact Form** | Instant serverless form connected directly to Web3Forms API. |
+
+</details>
+
+---
+
+## 📖 Overview
+
+This repository contains the official production codebase for **Automora AI**. Built with modern web standards, it offers a fast, responsive, and dark-themed digital showcase designed to present automation services, client case studies, implementation processes, and business contact channels.
+
+---
+
+## ✨ Key Features
+
+* 🎨 **Modern Dark-Themed UI:** Sleek, high-contrast aesthetic crafted for high-tech SaaS and agency branding.
+* ⚡ **Performance & SEO First:** Powered by Next.js App Router for optimal load speeds, static optimization, and search indexing.
+* 📱 **Fully Responsive:** Smooth layout adaptation across desktop, tablet, and mobile displays.
+* 🎭 **Micro-Interactions & Motion:** Fluid animations and scroll transitions powered by **Framer Motion**.
+* 📩 **Functional Contact Form:** Web3Forms integration for serverless lead capture directly to inbox.
+* 🧩 **Modular Component Architecture:** Clean separation between layout components, custom UI widgets, and site section blocks.
+* ♿ **Accessibility Ready:** Includes skip-to-content navigation, semantic HTML elements, and keyboard-navigable structure.
+
+---
+
+## 🛠️ Tech Stack & Ecosystem
 
 | Technology | Purpose |
-|---|---|
-| **Next.js** | React framework and application architecture |
-| **React** | User interface development |
-| **TypeScript** | Type-safe application development |
-| **Tailwind CSS** | Utility-first styling |
-| **Framer Motion** | Animations and transitions |
-| **Lucide Icons** | Interface icons |
-| **Web3Forms** | Contact form submission |
-| **Git** | Version control |
-| **GitHub** | Source code repository |
-| **Vercel / Netlify** | Deployment |
+| :--- | :--- |
+| **[Next.js](https://nextjs.org/)** | Full-stack React framework & routing architecture |
+| **[React](https://reactjs.org/)** | Declarative UI component library |
+| **[TypeScript](https://www.typescriptlang.org/)** | Type safety and enhanced developer tooling |
+| **[Tailwind CSS](https://tailwindcss.com/)** | Utility-first styling engine |
+| **[Framer Motion](https://www.framer.com/motion/)** | Declarative web animations and gestures |
+| **[Lucide Icons](https://lucide.dev/)** | Lightweight, consistent iconography set |
+| **[Web3Forms](https://web3forms.com/)** | Serverless form handling integration |
+| **[Vercel](https://vercel.com/) / [Netlify](https://netlify.com/)** | Edge deployment and hosting platform |
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Architecture
 
-```text
+
+```
+
 automora-ai/
+├── app/                        # Next.js App Router root
+│   ├── globals.css             # Tailwind base styles & custom directives
+│   ├── icon.svg                # Dynamic application favicon
+│   ├── layout.tsx              # Root layout & global HTML head metadata
+│   └── page.tsx                # Home / Landing page entry point
 │
-├── app/
-│   ├── globals.css              # Global styles
-│   ├── icon.svg                 # Website favicon
-│   ├── layout.tsx               # Root layout and metadata
-│   └── page.tsx                 # Main website page
-│
-├── components/
-│   │
+├── components/                 # React UI Components
 │   ├── navigation/
-│   │   └── Navbar.tsx           # Main navigation
-│   │
-│   ├── sections/
-│   │   ├── About.tsx             # About section
-│   │   ├── Contact.tsx           # Contact section
-│   │   ├── FAQ.tsx               # Frequently asked questions
-│   │   ├── Footer.tsx            # Website footer
-│   │   ├── Hero.tsx              # Hero section
-│   │   ├── Process.tsx            # Automation process
-│   │   ├── Services.tsx           # Services showcase
-│   │   ├── WhatWeDo.tsx           # What Automora does
-│   │   ├── WhyAutomora.tsx        # Why choose Automora
-│   │   └── WorkExamples.tsx       # Automation examples
-│   │
-│   └── ui/
-│       ├── Button.tsx             # Reusable button
-│       ├── Container.tsx          # Layout container
-│       ├── FadeIn.tsx             # Animation wrapper
-│       ├── HeroVisual.tsx         # Hero visual component
-│       └── SkipToContent.tsx      # Accessibility component
+│   │   └── Navbar.tsx          # Sticky navigation & mobile drawer
+│   ├── sections/               # High-level page sections
+│   │   ├── About.tsx           # Company background & story
+│   │   ├── Contact.tsx         # Lead generation form
+│   │   ├── FAQ.tsx             # Interactive accordion Q&A
+│   │   ├── Footer.tsx          # Site footer & copyright links
+│   │   ├── Hero.tsx            # Above-the-fold hero banner
+│   │   ├── Process.tsx         # Step-by-step onboarding roadmap
+│   │   ├── Services.tsx        # Core offering cards
+│   │   ├── WhatWeDo.tsx        # High-level value proposition
+│   │   ├── WhyAutomora.tsx     # Competitive advantages
+│   │   └── WorkExamples.tsx    # Automation case studies
+│   └── ui/                     # Atomic UI primitives
+│       ├── Button.tsx          # Reusable action button
+│       ├── Container.tsx       # Standardized width wrapper
+│       ├── FadeIn.tsx          # Framer Motion scroll wrapper
+│       ├── HeroVisual.tsx      # Custom graphic hero display
+│       └── SkipToContent.tsx   # Screen reader accessibility link
 │
 ├── config/
-│   └── site.ts                    # Website configuration
+│   └── site.ts                 # Global metadata, navigation links & dynamic config
 │
 ├── lib/
-│   └── utils.ts                   # Shared utility functions
+│   └── utils.ts                # Tailwind class mergers & global utility functions
 │
-├── public/                        # Static assets
-│
-├── .gitignore                     # Git ignored files
-├── next.config.mjs                # Next.js configuration
-├── next-env.d.ts                  # Next.js TypeScript definitions
-├── package.json                   # Project dependencies and scripts
-├── package-lock.json              # Locked dependency versions
+└── public/                     # Static assets (images, vectors, fonts)
 
-🧩 Website Architecture
+```
 
-The website is structured into reusable sections rather than placing the entire interface inside a single page component.
+---
 
-Application Layer
+## 🚀 Getting Started
 
-The app/ directory contains the Next.js application entry points, global styling, layout, metadata, and main page.
+Follow these steps to run the Automora AI platform locally on your machine.
 
-Component Layer
+### Prerequisites
 
-The components/ directory contains reusable interface components.
+Ensure you have the following installed:
+* **Node.js** (v18.0.0 or higher recommended)
+* **npm** or **yarn** / **pnpm**
 
-Website sections are separated into:
+### Installation
 
-components/sections/
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ByteWithHassan/automora-ai.git](https://github.com/ByteWithHassan/automora-ai.git)
+   cd automora-ai
 
-while reusable interface elements are contained in:
+```
 
-components/ui/
+2. **Install dependencies:**
+```bash
+npm install
 
-This structure makes individual sections easier to maintain and modify without affecting unrelated parts of the website.
+```
 
-Configuration Layer
 
-Website-level configuration is maintained in:
+3. **Configure Environment Variables:**
+Create a `.env.local` file in the root directory:
+```env
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key_here
 
-config/site.ts
-Utility Layer
+```
 
-Shared helper functions are maintained in:
 
-lib/
-🔐 Environment Variables
+4. **Launch the development server:**
+```bash
+npm run dev
 
-The website uses environment variables for external service configuration.
+```
 
-The contact form requires the Web3Forms access key:
 
-NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_access_key
+Open `http://localhost:3000` in your browser to view the live app.
 
-Environment files containing credentials are intentionally excluded from version control.
+---
 
-The repository does not include:
+## 📜 NPM Scripts
 
-.env
-.env.local
-.env.development
-.env.production
-.env.test
+| Command | Action |
+| --- | --- |
+| `npm run dev` | Starts local development server with Hot Module Replacement (HMR). |
+| `npm run build` | Compiles and optimizes the application for production deployment. |
+| `npm run start` | Runs the compiled production build locally. |
+| `npm run lint` | Runs ESLint checks to identify and report code issues. |
 
-API keys, credentials, tokens, and other sensitive values should never be committed to the repository.
+---
 
-📜 Available Scripts
-Command	Description
-npm run dev	Starts the development server
-npm run build	Creates the production build
-npm run start	Starts the production server
-npm run lint	Runs the configured linting process
-🚀 Deployment
+## 🔐 Security & Environment Standards
 
-Automora AI is designed to run on modern Next.js-compatible hosting platforms.
+> [!IMPORTANT]
+> Sensitive credentials, API keys, and environment files (`.env*`) are strictly excluded from version control.
 
-Supported deployment platforms include:
+The repository excludes the following configuration targets via `.gitignore`:
 
-Vercel
-Netlify
-Other platforms capable of hosting Next.js applications
+* Environment keys: `.env`, `.env.local`, `.env.production`
+* Build outputs: `.next/`, `out/`, `node_modules/`
+* Internal guidelines: `CLAUDE.md`, `AGENTS.md`
 
-Production deployments should have all required environment variables configured through the hosting platform's environment settings.
+---
 
-🔒 Repository Security
+## 🔮 Roadmap & Future Enhancements
 
-Private development and configuration files are excluded from the repository, including:
+* [ ] **AI Conversational Assistant:** Embedded client-facing bot for instant project scoping.
+* [ ] **Interactive ROI Calculator:** Real-time business savings simulator based on team size.
+* [ ] **Client Onboarding Portal:** Automated workflow status tracker for active clients.
+* [ ] **WhatsApp & CRM Integrations:** Direct lead sync with HubSpot, Salesforce, and messaging APIs.
+* [ ] **Case Study Deep-Dives:** Expanded library of real-world workflow automation benchmarks.
 
-.env*
-node_modules/
-.next/
-CLAUDE.md
-AGENTS.md
+---
 
-This keeps environment credentials, local dependencies, generated files, and private AI development instructions outside the public repository.
+## 👨‍💻 Author & Attribution
 
-📱 Responsive Design
+Developed and maintained by **Hassan Khurshid**.
 
-The website is designed to work across:
+* **GitHub:** [@ByteWithHassan](https://github.com/ByteWithHassan?utm_source=gemini)
+* **Website:** [automora.ai](https://automora.ai?utm_source=gemini)
 
-Desktop
-Laptop
-Tablet
-Mobile devices
+---
 
-The interface adapts its layout and navigation according to the available screen size.
+## 📄 License
 
-🎯 Purpose
+**Copyright © 2026 Automora AI. All rights reserved.**
 
-Automora AI's website is designed to communicate the value of business automation clearly and provide potential clients with an overview of:
+This source code is proprietary software. Public availability on GitHub is for portfolio and demonstration purposes only. Redistribution, copying, modification, or commercial reuse without express written permission is strictly prohibited.
 
-Automation services
-Business use cases
-Automation workflows
-Implementation process
-Benefits of automation
-Frequently asked questions
-Contact options
+```
 
-The website acts as the public-facing foundation for the Automora AI brand.
+<FollowUp label="Want me to draft the GitHub Actions YAML files for building, linting, and deploying this Next.js app?" query="Provide the GitHub Actions workflow YAML configuration files for deployment, linting, and security scans for a Next.js application."/>
 
-🔮 Future Development
-
-The website architecture is designed to support future additions such as:
-
-AI-powered website assistant
-WhatsApp automation
-Lead management automation
-CRM integrations
-Automated client onboarding
-Client dashboards
-Additional automation case studies
-Interactive automation demonstrations
-Additional third-party integrations
-👨‍💻 Author
-
-Hassan Khurshid
-
-GitHub: https://github.com/ByteWithHassan
-
-📄 License
-
-Copyright © 2026 Automora AI.
-
-This project and its source code are proprietary to Automora AI. Public visibility of the repository does not grant permission to copy, redistribute, resell, or commercially reuse the source code, design, branding, or other project assets without authorization
-├── README.md                      # Project documentation
-└── tsconfig.json                  # TypeScript configuration
+```
