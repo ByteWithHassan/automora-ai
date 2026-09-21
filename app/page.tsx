@@ -11,21 +11,5 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
-  return (
-    <div className="relative min-h-screen bg-[#080a0f]">
-      <Navbar />
-      <main id="main-content" tabIndex={-1} className="outline-none">
-        <Hero />
-        <WhatWeDo />
-        <Services />
-        <Process />
-        <WorkExamples />
-        <WhyAutomora />
-        <About />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <div className="relative min-h-screen bg-[#080a0f]"><Navbar /><main id="main-content" tabIndex={-1} className="outline-none"><Hero /><WhatWeDo /><Services /><Process /><WorkExamples /><WhyAutomora /><About /><FAQ /><Contact /></main><Footer /></div>;
 }
