@@ -1,4 +1,4 @@
-const assignmentTest: string = 123;
+
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
