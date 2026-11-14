@@ -22,3 +22,10 @@ AGENTS.md
 # OS files
 .DS_Store
 Thumbs.db
+# local env files
+.env*.local
+.env
+
+# cloudflare / opennext build outputs
+.open-next
+.wrangler

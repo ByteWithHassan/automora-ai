@@ -1,22 +1,26 @@
 export const siteConfig = {
-  name: "Automora AI",
-  tagline: "Business automation that fits the way you work",
+  name: "Automora Flow",
+  tagline: "Automate Smarter. Grow Faster.",
   description:
-    "Automora AI helps growing businesses connect their tools, handle customer conversations, and turn manual workflows into dependable systems.",
-  contact: {
-    email: "contact@automora.ai",
-    whatsappUrl:
-      "https://wa.me/15550192831?text=Hello%20Automora%20AI,%20I%20would%20like%20to%20discuss%20automating%20our%20business%20processes.",
-    displayPhone: "+1 (555) 019-2831",
-  },
-  social: {
-    linkedin: "https://linkedin.com/company/automora-ai",
-    twitter: "https://x.com/automora_ai",
-    github: "https://github.com/automora-ai",
-  },
+    "We build intelligent AI agents and business automation systems that handle repetitive work, capture opportunities, and help businesses grow around the clock.",
+  url: "https://automoraflow.tech",
+  ogImage: "https://automoraflow.tech/og.png",
   cta: {
-    primary: "Book a Free Consultation",
-    secondary: "Explore Services",
+    primary: "Explore Services",
+    secondary: "Book a Free Consultation",
     whatsapp: "Chat on WhatsApp",
   },
-} as const;
+  contact: {
+    email: "hello@automoraflow.tech",
+    whatsappUrl: "https://wa.me/message/ST674VPYHIWKI1",
+  },
+  social: {
+    whatsapp: "https://wa.me/message/ST674VPYHIWKI1",
+    facebook: "https://www.facebook.com/share/14vcXgtZyJf/",
+    github: "https://github.com/ByteWithHassan",
+    linkedin: "https://automoraflow.tech",
+    twitter: "https://automoraflow.tech",
+  },
+};
+
+export type SiteConfig = typeof siteConfig;

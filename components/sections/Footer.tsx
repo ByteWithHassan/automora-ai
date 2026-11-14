@@ -4,124 +4,143 @@ import React from "react";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/config/site";
-import { ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
 
-const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "Services", href: "#services" },
-  { name: "Process", href: "#process" },
-  { name: "Work", href: "#work" },
-  { name: "About", href: "#about" },
-  { name: "FAQ", href: "#faq" },
-  { name: "Contact", href: "#contact" },
+const serviceLinks = [
+  { name: "Gmail & Email Automation", href: "/services/gmail-automation" },
+  { name: "Lead Generation & Follow-Up", href: "/services/lead-generation" },
+  { name: "WhatsApp Business Automation", href: "/services/whatsapp-automation" },
+  { name: "AI Voice Agents", href: "/services/ai-voice-agents" },
+  { name: "CRM & Sales Automation", href: "/services/crm-sales-automation" },
+  { name: "Appointment & Booking", href: "/services/appointment-booking" },
+  { name: "AI Customer Support Agents", href: "/services/ai-customer-support" },
+  { name: "Business Workflow Automation", href: "/services/business-workflow-automation" },
+];
+
+const companyLinks = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Case Studies", href: "/case-studies" },
+  { name: "Blog & Insights", href: "/blog" },
+  { name: "How It Works", href: "/#process" },
+  { name: "Pricing & Tiers", href: "/#pricing" },
+  { name: "FAQ", href: "/#faq" },
+  { name: "Book Consultation", href: "/#book-consultation" },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-[#05070a] border-t border-slate-800/80 py-16 text-slate-400 relative overflow-hidden">
-      <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.1 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800/60"
-        >
-          {/* Brand Info */}
-          <div className="md:col-span-5 space-y-4">
-            <Link href="#hero" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-transform duration-300 group-hover:scale-105">
+    <footer className="bg-[#02050b] border-t border-slate-800/80 pt-16 pb-12 text-slate-400 relative overflow-hidden">
+      {/* Ambient Background Lighting */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-gradient-to-b from-purple-500/10 via-cyan-500/5 to-transparent blur-[120px] pointer-events-none transform-gpu" />
+
+      <Container className="relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/60">
+          
+          {/* Column 1: Brand Info */}
+          <div className="lg:col-span-5 space-y-4">
+            <Link href="/" className="flex items-center gap-2.5 group inline-flex">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 via-blue-600 to-purple-600 flex items-center justify-center font-bold text-slate-950 text-base shadow-[0_0_20px_rgba(168,85,247,0.35)] transition-transform duration-300 group-hover:scale-105">
                 A
               </div>
-              <span className="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                {siteConfig.name}
-              </span>
+              <div className="flex flex-col">
+                <span className="font-extrabold text-base sm:text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                  {siteConfig.name}
+                </span>
+                <span className="text-[10px] font-mono text-purple-400 tracking-wider -mt-1">
+                  AI AUTOMATION STUDIO
+                </span>
+              </div>
             </Link>
-            <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
-              {siteConfig.tagline}. We engineer autonomous, scalable AI workflows that eliminate manual operational drag.
+
+            <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
+              We engineer custom AI workflows, autonomous agents, and seamless API integrations that handle repetitive operations so your business can scale cleanly.
             </p>
+
+            <div className="flex items-center gap-3 pt-2">
+              {/* WhatsApp SVG */}
+              <a
+                href="https://wa.me/message/ST674VPYHIWKI1"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-colors"
+                aria-label="WhatsApp"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z" />
+                </svg>
+              </a>
+
+              {/* Facebook SVG */}
+              <a
+                href="https://www.facebook.com/share/14vcXgtZyJf/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
+                aria-label="Facebook"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
-          {/* Navigation Links */}
-          <div className="md:col-span-3">
-            <h4 className="text-xs font-mono uppercase text-slate-300 tracking-wider mb-4">Navigation</h4>
-            <ul className="space-y-2.5 text-sm">
-              {navLinks.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="hover:text-cyan-400 transition-colors">
-                    {link.name}
-                  </a>
+          {/* Column 2: Automation Services */}
+          <div className="lg:col-span-4 space-y-3">
+            <h4 className="text-xs font-mono uppercase text-purple-400 tracking-widest font-semibold">
+              Automation Solutions
+            </h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+              {serviceLinks.map((s) => (
+                <li key={s.name}>
+                  <Link
+                    href={s.href}
+                    className="hover:text-cyan-400 transition-colors text-slate-300 block py-0.5"
+                  >
+                    {s.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Direct Communication & Socials */}
-          <div className="md:col-span-4 space-y-4">
-            <h4 className="text-xs font-mono uppercase text-slate-300 tracking-wider mb-2">Connect</h4>
-            <div className="space-y-2 text-sm font-mono">
-              <div>
-                <span className="text-slate-500 block text-[10px]">EMAIL:</span>
-                <a href={`mailto:${siteConfig.contact.email}`} className="text-cyan-400 hover:underline">
-                  {siteConfig.contact.email}
-                </a>
-              </div>
-              <div>
-                <span className="text-slate-500 block text-[10px]">WHATSAPP:</span>
-                <a href={siteConfig.contact.whatsappUrl} target="_blank" rel="noreferrer" className="text-emerald-400 hover:underline inline-flex items-center gap-1">
-                  <span>Chat on WhatsApp</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-
-            {/* Social Icons */}
-            <div className="flex items-center gap-3 pt-2">
-              <motion.a
-                whileHover={{ y: -2, scale: 1.05 }}
-                href={siteConfig.social.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z" />
-                </svg>
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -2, scale: 1.05 }}
-                href={siteConfig.social.twitter}
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-                aria-label="Twitter / X"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -2, scale: 1.05 }}
-                href={siteConfig.social.github}
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-                aria-label="GitHub"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
-                </svg>
-              </motion.a>
-            </div>
+          {/* Column 3: Company Links */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="text-xs font-mono uppercase text-cyan-400 tracking-widest font-semibold">
+              Company & Resources
+            </h4>
+            <ul className="space-y-2 text-xs">
+              {companyLinks.map((c) => (
+                <li key={c.name}>
+                  <Link
+                    href={c.href}
+                    className="hover:text-purple-300 transition-colors text-slate-300 inline-flex items-center gap-1"
+                  >
+                    <span>{c.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        </motion.div>
+        </div>
 
-        {/* Copyright Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-          <p className="font-mono text-[11px]">Intelligent Systems Engineering</p>
+          <div className="flex items-center gap-6 font-medium">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-cyan-400 transition-colors text-slate-400 underline underline-offset-4"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="hover:text-purple-400 transition-colors text-slate-400 underline underline-offset-4"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </Container>
     </footer>
