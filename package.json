@@ -7,15 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-  "build:cf": "opennextjs-cloudflare build",
-  "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "build:cf": "opennextjs-cloudflare build",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.17",
     "clsx": "^2.1.1",
     "framer-motion": "^13.2.0",
     "gsap": "^3.15.0",
     "lucide-react": "^1.46.0",
-    "next": "16.3.5",
+    "next": "^16.4.6",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.7.0"
@@ -28,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.162.0"
   }
 }
