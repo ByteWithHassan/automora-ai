@@ -57,7 +57,7 @@ export function About() {
         </div>
 
         {/* Philosophy Callout Banner */}
-        <FadeIn direction="up" delay={0.2} preset="scale">
+        <FadeIn direction="up" delay={0.2} preset="blur">
           <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-cyan-950/30 via-slate-900/60 to-blue-950/30 border border-cyan-500/30 text-center mb-16 backdrop-blur-xl shadow-2xl relative">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest block mb-2">Our Operating Philosophy</span>
             <blockquote className="text-xl sm:text-2xl font-semibold text-white italic">
